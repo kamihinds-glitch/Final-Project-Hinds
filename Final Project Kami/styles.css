@@ -347,7 +347,7 @@ header {
 .header__email--btn {
     z-index: 2;
     margin: 8px;
-    padding: 20px;
+    padding: 15px;
     white-space: nowrap;
     height: clac(100% - 16px);
     border-radius: 500px;
