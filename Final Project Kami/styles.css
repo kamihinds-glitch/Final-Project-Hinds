@@ -271,6 +271,12 @@ HEADER / ABOUT US ↓
 
 */
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -279,8 +285,25 @@ header {
     background-color: white;
 }
 
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .header__description {
-    flex: 1; 
+  flex: 1;
+  width: 40%;
+
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__email--input {
@@ -292,27 +315,7 @@ header {
     max-width: 100%;
 }
 
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.header__description {
-    flex: 1;
-}
-
-.header__img {
-    max-width: 100%;
-    height: auto;
-}
 
 .header__email {
     width: 100%;
@@ -337,18 +340,18 @@ header {
     color: rgb(36, 62 99);
     font-size: 16px;
     font-weight: 500;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
+    margin: 32px 0;
     transition: border-color 300ms; 
 }
 
 .header__email--btn {
     z-index: 2;
     margin: 8px;
+    padding: 20px;
+    white-space: nowrap;
     height: clac(100% - 16px);
     border-radius: 500px;
+    display: flex;
     width: 160px;
     border: none;
     background-color:#6415ff;
@@ -360,6 +363,28 @@ header {
 
 button {
     cursor: pointer;
+}
+
+.header__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header__img-wrapper {
+    width: 60%;
+}
+
+.header__customers--title {
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.header__customers {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 16px;
+    opacity: 0.5;
 }
 
 /* 
