@@ -899,7 +899,7 @@ VALUES ↓
 
 
 @media (max-width: 768px) {
-    .values__description {
+    .values__description, .values--img {
         width: 100%;
         max-width: 448px;
     }
@@ -1095,6 +1095,10 @@ img {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+}
+
+#values .btn {
+    margin-top: 48px;
 }
 
 /*
