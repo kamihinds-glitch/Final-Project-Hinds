@@ -1050,6 +1050,12 @@ img {
     margin-top: 48px;
 } 
 
+@media (max-width: 768px) {
+    #values .btn {
+        align-self: center;
+    }
+}
+
 
 /*
 
@@ -1091,12 +1097,7 @@ PRICING ↓
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .plans {
-        width: 100%;
-        text-align: center;
-    }
-}
+
 
 @media (max-width: 1024px) {
     .plan {
