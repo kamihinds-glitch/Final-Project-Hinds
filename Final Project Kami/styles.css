@@ -292,6 +292,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    margin: 0 auto;
 }
 
 .header__description {
@@ -472,6 +473,12 @@ section {
 .feature {
     flex: 0 1 calc(33.333% - 16px);
     min-width: 280px;
+}
+
+@media (max-width: 1024px) {
+ .feature {
+    width: calc(100% / 2 - 16px);
+ }
 }
 
 @media (max-width: 768px) {
@@ -1036,6 +1043,12 @@ img {
     vertical-align: middle;
 }
 
+@media (max-width: 768px) {
+.vlaue__title {
+    align-items: center;
+}
+}
+
 .purple {
     color: #6415ff;
 }
@@ -1074,12 +1087,21 @@ PRICING ↓
 .plans {
     flex-direction: column;
     align-items: center;
+
 }
 .plan {
     width: 100%;
     max-width: 100%;
     margin-right: 0;
 }
+}
+
+@media (max-width: 768px) {
+    .plans {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1127,6 +1149,7 @@ PRICING ↓
     .plan {
         width: 100%;
         text-align: center;
+        flex-direction:column;
     }
 }
 
@@ -1722,6 +1745,10 @@ footer {
 @media (max-width: 768px) {
     .footer__column {
         width: calc(100% / 3);
+    }
+    .testimonials__description {
+        padding-left: 0px;
+        width: 100%;
     }
 }
 
